@@ -3,47 +3,118 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+
+
 a {
     text-decoration: none;
 }
 
+.content {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
+
 /* хедер */
+
+.header {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav__link {
+    color: #000;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 #home_nav {
     color: #F25822;
 }
 
-.logo {
-    padding-top: 45px;
-}
+
 
 
 /* мэйн секция */
 
-.left_main_section {
+.main_section {
     margin-top: 89px;
+    margin-bottom: 162.45px;
+    display: flex;
+    gap: 41px;
 }
 
-.right_main_section {
-    margin-bottom: 162.45px;
+.title {
+    width: 522px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
 }
+
+
+
 
 
 .main__text {
-    color: #888888;
-    margin-top: 17px;
+    display: inline-block;
+    width: 466 px;
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin-bottom: 37px;
 }
 
-button {
+
+
+.action {
+    gap: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.action button {
     width: 140px;
     height: 50px;
-    color: #FFF;
     border-radius: 50px;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
-    
+    border: none;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
 .action a {
     color: #aaa;
 }
@@ -51,6 +122,9 @@ button {
 /* подвалиус */
 
 .footer {
+    margin-left: 40px;
     padding-top: 97px;
     padding-bottom: 96px;
+    display: flex;
+    gap: 48px;
 }
